@@ -1,0 +1,360 @@
+.App {
+  min-height: 100vh;
+  text-align: left;
+  background: #f0f4f8;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+}
+
+.App-header {
+  background-color: transparent;
+  min-height: 100vh;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.App-inner {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem 1.75rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.App-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01rem;
+}
+
+.App-badge {
+  background: linear-gradient(135deg, #1a73e8, #1558b0);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.35);
+}
+
+.App-desc {
+  color: #64748b;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.App-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 480px;
+  width: 100%;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.App-form label {
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.App-consultando {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.App-input {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+}
+
+.App-input::placeholder {
+  color: #999;
+}
+
+.App-cnpj {
+  font-size: 0.9rem;
+  color: #61dafb;
+  margin: 0;
+}
+
+.App-button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  background: #2f80ed;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.App-button:hover:not(:disabled) {
+  background: #2563c4;
+}
+
+.App-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.App-button-secondary {
+  min-width: 260px;
+}
+
+.App-erro {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #ffe9e9;
+  border: 1px solid #f19999;
+  border-radius: 6px;
+  color: #b3261e;
+  max-width: 560px;
+  width: 100%;
+}
+
+.App-section {
+  margin-top: 2.5rem;
+  width: 100%;
+  max-width: 960px;
+  text-align: left;
+}
+
+.App-section-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.15rem;
+}
+
+.App-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.App-col-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.App-col-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 120px;
+}
+
+.App-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.App-col-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: #2563c4;
+}
+
+.App-msg {
+  margin: 0;
+  padding: 1rem;
+  background: #f3f4f7;
+  border-radius: 6px;
+  color: #555;
+  font-size: 0.9rem;
+  min-height: 120px;
+}
+
+.App-table-wrap {
+  overflow: auto;
+  flex: 1;
+  min-height: 120px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #e0e4ef;
+}
+
+.App-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.App-table th,
+.App-table td {
+  padding: 0.5rem 0.4rem;
+  text-align: left;
+  border: 1px solid #444;
+}
+
+.App-table th {
+  background: #eef2fb;
+  color: #2f3a4f;
+  white-space: nowrap;
+}
+
+.App-table td {
+  color: #333;
+  word-break: break-word;
+  max-width: 200px;
+}
+
+.App-json {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow: auto;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+  flex: 1;
+  min-height: 120px;
+  box-shadow: 0 0 0 1px #e0e4ef;
+}
+
+.App-translate {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.App-translate-msg {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.App-list-desc {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.App-list-oc {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.App-list-oc li {
+  margin: 0;
+}
+
+.App-list-oc-btn {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  background: #ffffff;
+  color: #2563c4;
+  border: 1px solid #d0d7e7;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.App-list-oc-btn:hover {
+  background: #f1f5ff;
+  border-color: #2f80ed;
+}
+
+.App-list-oc-btn.active {
+  background: #2f80ed;
+  color: #ffffff;
+  border-color: #2f80ed;
+}
+
+.App-oc-itens {
+  margin-top: 0.5rem;
+}
+
+.App-oc-itens-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.App-oc-placeholder {
+  min-height: 120px;
+}
+
+.App-drag-row {
+  cursor: grab;
+}
+
+.App-drag-row:active {
+  cursor: grabbing;
+}
+
+.App-drag-row.App-dragging {
+  opacity: 0.6;
+}
+
+.App-drop-row {
+  transition: background-color 0.15s ease;
+}
+
+.App-drop-row.App-drop-over {
+  background-color: rgba(47, 128, 237, 0.12);
+  outline: 2px solid #2f80ed;
+  outline-offset: -2px;
+}
+
+.App-vinculo-cell {
+  max-width: 220px;
+  font-size: 0.85em;
+  color: #0b8043;
+}
+
+.App-row-linked .App-cell-linked {
+  background-color: #e3f6e8;
+}
+
+.App-cell-linked {
+  background-color: #e3f6e8;
+}
+
+.App-row-pending .App-cell-pending {
+  background-color: #ffe7c2;
+}
+
+.App-cell-pending {
+  background-color: #ffe7c2;
+}
+
+@media (max-width: 700px) {
+  .App-two-cols {
+    grid-template-columns: 1fr;
+  }
+}
