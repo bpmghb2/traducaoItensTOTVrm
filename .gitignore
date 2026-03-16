@@ -11,8 +11,8 @@ build/
 .next/
 
 ### Ambiente / segredos
-.env
-.env.*
+#.env
+#.env.*
 
 ### Logs
 logs/
